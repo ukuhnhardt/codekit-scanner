@@ -8,6 +8,10 @@
   },
   "author": "U Kuhnhardt",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ukuhnhardt/codekit-scanner"
+  },
   "dependencies": {
     "q": "^1.4.1"
   },
