@@ -1,0 +1,18 @@
+{
+  "name": "codekit-scanner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test/"
+  },
+  "author": "U Kuhnhardt",
+  "license": "MIT",
+  "dependencies": {
+    "q": "^1.4.1"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^2.4.5"
+  }
+}
