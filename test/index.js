@@ -1,4 +1,4 @@
-var     expand  =   require('../.')
+var     codekit  =   require('../.')
     ,   expect  =   require('expect.js')
     ;
 
@@ -6,7 +6,7 @@ var     expand  =   require('../.')
 describe("codekit scanner test", function(){
     it('should scan codekit-prepends', function(done){
         this.timeout(10000);
-        expand({file: 'test/js/core.js', fw: 'test/framework', jsDir : 'test/js'}, function(files){
+        codekit({file: 'test/js/core.js', fw: 'test/framework', jsDir : 'test/js'}, function(files){
             console.log('files',files);
             expect(files).to.contain('test/js/core.config.js');
             expect(files).to.contain('test/framework/js/framework.file.js');
@@ -17,7 +17,7 @@ describe("codekit scanner test", function(){
     });
     it('should scan codekit-appends', function(done){
         this.timeout(10000);
-        expand({file: 'test/js/core.js', fw: 'test/framework', jsDir : 'test/js'}, function(files){
+        codekit({file: 'test/js/core.js', fw: 'test/framework', jsDir : 'test/js'}, function(files){
             console.log('files',files);
             expect(files).to.contain('test/js/modules/module.js');
             expect(files).to.contain('test/js/views/view.js');

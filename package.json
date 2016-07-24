@@ -1,7 +1,7 @@
 {
   "name": "codekit-scanner",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "Codekit @append and @prepend scanner for Gulp integration",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha test/"
