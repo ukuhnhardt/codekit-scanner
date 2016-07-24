@@ -24,8 +24,6 @@ Resolves dependencies by local JS directory and framework directory just like Co
 ```
 var codekit = require('codekit-scanner');
 
-codekit({file: 'test/js/core.js', fw: 'test/framework', jsDir : 'test/js'}, function(files)
-
 gulp.task('default', function () {
     codekit({file: 'js/core.js', fw: 'external/UIFramework', jsDir : 'js'}, function(files){
         console.log('files',files);
