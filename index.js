@@ -22,7 +22,7 @@ module.exports = function (params, cb) {
     var promises =[];
 
     function getFile(line) {
-        return line.split(/@codekit-\w+/)[1].replace(new RegExp("'", 'g'), "").trim();
+        return line.split(/@codekit-\w+/)[1].replace(/['";]/g, "").trim();
     }
 
     function addFileQ(soFar, jsFile) {
