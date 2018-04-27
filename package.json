@@ -1,6 +1,6 @@
 {
   "name": "codekit-scanner",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Codekit @append and @prepend scanner for Gulp integration",
   "main": "index.js",
   "scripts": {
